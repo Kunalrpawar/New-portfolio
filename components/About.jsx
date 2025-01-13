@@ -28,27 +28,25 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Shivam Sharma, a passionate web developer and problem
-          solver. Currently, I&apos;m the Tech Team Lead at GDSC MVJCE, and
-          I&apos;m pursuing a B.E. degree in Computer Science and Engineering at
-          MVJ College Of Engineering in Bengaluru, India, with an expected
-          graduation year of 2025. I&apos;m a software developer with experience
-          in TypeScript, TailwindCSS, and JavaScript. I specialize in frameworks
-          such as React, Node.js, Next.js, React-Three-Fiber, and Three.js. My
-          knowledge extends to fundamental data structures and algorithms,
-          making me well-versed in frontend web development.
+        Hello! I'm Kunal Ramesh Pawar, a passionate developer and aspiring problem solver. Currently pursuing a B.E. degree in Information Technology, I bring a strong focus on innovation and learning. My experience spans across developing engaging web applications and AI/ML-powered solutions.
+
+I have hands-on expertise in C++, Python, and Django, along with a deep interest in crafting Technologies using  Web development, Database Management, and Game Development. 
+
+With a keen interest in data structures and algorithms, I strive to design efficient, scalable, and user-centric applications. My mission is to bridge the gap between technology and impactful solutions, leveraging curiosity and dedication to tackle real-world challenges.
+
+
           <br className="sm:block hidden" />
           Let&apos;s collaborate to bring your ideas to life!
         </div>
         <div className="w-fit break-words">
           <Link
-            href="mailto:shivamsharma77607@gmail.com"
+            href="mailto:kunalrpawar04@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
           >
             <EmailIcon className="w-[30px] h-[30px]" />
-            shivamsharma77607@gmail.com
+              kunalrpawar04@gmail.com
           </Link>
         </div>
         <div className="flex gap-5 items-center">
@@ -63,26 +61,7 @@ function About() {
             </Link>
           ))}
         </div>
-        <Link
-          href="document/Shivam_Sharma_Resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-          className="w-fit"
-        >
-          <div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
-            <div className="original bg-primary text-white px-7 py-2">
-              Resume
-            </div>
-            <div className="letters">
-              <span>R</span>
-              <span>e</span>
-              <span>s</span>
-              <span>u</span>
-              <span>m</span>
-              <span>e</span>
-            </div>
-          </div>
-        </Link>
+        
       </motion.div>
     </section>
   );

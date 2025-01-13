@@ -50,7 +50,7 @@ const services = [
     icon: <ProblemSolvingIcon />,
   },
   {
-    title: "Freelancer",
+    title: "Intern",
     icon: <FreelancerIcon />,
   },
   // {
@@ -103,6 +103,13 @@ const technologies = {
       icon: "/assets/tech/nextjs.svg",
       link: "https://nextjs.org/",
     },
+
+    {
+      name: "Angular",
+      icon: "/assets/tech/angular.png",
+      link: "https://angular.com/",
+    },
+
     {
       name: "TailwindCSS",
       icon: "/assets/tech/tailwindcss.svg",
@@ -114,8 +121,8 @@ const technologies = {
       link: "https://expressjs.com/",
     },
     {
-      name: "Flutter",
-      icon: "/assets/tech/flutter.svg",
+      name: "Django",
+      icon: "/assets/tech/django.png",
       link: "https://flutter.dev/",
     },
   ],
@@ -234,29 +241,29 @@ const experiences = [
   //   ],
   // },
   {
-    title: "Frontend Developer Intern",
-    company_name: "Intern at Curowell Healthcare Private Ltd",
-    icon: "/assets/company/curowell-logo.svg",
+    title: "Web Development Intern",
+    company_name: "Yarasi Tech",
+    icon: "/assets/company/vivada_tech_logo.png",
     iconBg: "#E6DEDD",
-    date: "November 2023",
+    date: "May 2024",
     points: [
-      "Developing a healthcare SaaS platform using Next.js, TypeScript, and Tailwind CSS, significantly enhancing user experience.",
-      "Maintaining an efficient codebase under senior guidance, ensuring adherence to best practices in software development.",
-      "Contributing to the DND form microfrontend, improving user interaction by 30%.",
-      "Collaborating in UI/UX design efforts, leading to a 25% reduction in component development time.",
+     "Developed a social media platform focused on trending news, similar to Twitter but excluding humorous content, improving user focus on serious discussions",
+"Leveraged Angular for frontend development and Django for seamless backend integration, ensuring a responsive and user-friendly interface",
+"Utilized Docker for containerization, optimizing deployment processes and enhancing scalability",
+"Implemented GraphQL with PostgreSQL for efficient data querying and management, boosting performance and reducing data retrieval time"
     ],
   },
   {
-    title: "Full Stack Developer Intern",
-    company_name: "Intern at DRDO CABS",
-    icon: "/assets/company/drdo-cabs.png",
+    title: "Content Writer Intern",
+    company_name: "Marpu Foundation",
+    icon: "/assets/company/marpu1.png",
     iconBg: "#E6DEDD",
-    date: "November 2023",
+    date: " March 2021",
     points: [
-      "Developed a Facility Bookings Manager for DRDO CABS using TypeScript, React, Node.js, Express, Prisma, and MySQL within a month.",
-      "Actively addressed client issues and queries, ensuring seamless integration with their platform and local cluster system.",
-      "Led the design and implementation of the frontend, providing a user-friendly interface for efficient facility management.",
-      "Collaborated with a backend intern throughout the internship to deliver a comprehensive solution tailored to DRDO CABS's needs.",
+      "Curated content across various niches, including Travel, Health, Food, Fashion, Lifestyle, Tech, and Sports, utilizing SEO tools to optimize content and improve search engine rankings",
+"Conducted thorough keyword research to enhance content visibility, drive organic traffic, and align with audience preferences",
+"Collaborated with editorial teams to ensure high-quality, engaging, and audience-focused content across multiple platforms",
+"Managed deadlines effectively while maintaining consistency and creativity in writing tailored to specific target audiences."
     ],
   },
   // {
@@ -303,16 +310,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "QuickEdit: AI-Powered Image & Video Editor",
+    name: "CourtBuddy: AI-Powered Commercial court Engine",
     description:
-      "QuickEdit is an AI-powered online image and video editor built using the Cloudinary AI API. It offers robust features for both images and videos, with user-friendly authentication and a tiered credit system. Enhance your media editing experience with cutting-edge AI tools!",
+      " Developed an AI-driven research engine for commercial courts, utilizing Flask, NLP, and large language models (LLMs) for efficient legal data analysis. Employed TensorFlow for machine learning, along with predictive algorithms, dataset management, and Docker for containerization, enhancing accuracy and streamlining decision-making.",
     tags: [
       {
-        name: "typescript",
+        name: "tensorflow",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "Flask",
         color: "green-text-gradient",
       },
       {
@@ -324,22 +331,21 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "cloudinary",
+        name: "streamlit",
         color: "yellow-text-gradient",
       },
     ],
-    image:
-      "https://res.cloudinary.com/dqiqi75hm/image/upload/v1734187202/quickedit/dp6y8s8dstqfpq7svmj5.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/QuickEdit",
-    deployed_link: "https://quick-edit-app.vercel.app",
+    image: "/assets/court.png",
+    source_code_link: "https://github.com/Kunalrpawar/Hackbots_court",
+    deployed_link: "",
   },
   {
-    name: "FigPro",
+    name: "Music Recommendation System Using AI",
     description:
-      "FigPro is a web-based collaborative design tool similar to Figma, built using Next.js, TypeScript, Tailwind CSS, and LiveBlocks API, Fabric.js. With FigPro, teams can seamlessly collaborate on designing interfaces in real-time with a plethora of features.",
+    "Developed a feature-rich and dynamic music recommendation system using Python, Streamlit,  Django, HTML, and CSS. The system leverages NLP techniques and a fine-tuned LLM model to analyze user  mood and provide personalized song  recommendations, significantly enhancing the overall listening experience",
     tags: [
       {
-        name: "typescript",
+        name: "streamlit",
         color: "blue-text-gradient",
       },
       {
@@ -351,7 +357,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "fabricjs",
+        name: "docker",
         color: "orange-text-gradient",
       },
       {
@@ -359,9 +365,9 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/fig-pro.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/FigPro",
-    deployed_link: "https://fig-pro-github.vercel.app",
+    image: "/assets/ai_music.jpg",
+    source_code_link: "https://github.com/Kunalrpawar/AI_music_recommodation",
+    deployed_link: "",
   },
   // {
   //   name: "GDSC Website",
@@ -394,16 +400,16 @@ const projects = [
   //   deployed_link: "https://gdscmvjce.vercel.app/",
   // },
   {
-    name: "Facility Management System",
+    name: "Canteen Management System",
     description:
-      "The Facility Management System is a comprehensive management solution developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to book time slots in facilities and provides role-based access control for various functionalities.",
+      "The Canteen Management System is a comprehensive management solution developed using the Html,CSS , Javascript and PHP. It allows users to book food  and provides neccessary information about the dishes and control for various functionalities.",
     tags: [
       {
-        name: "typescript",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
@@ -411,19 +417,18 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "node.js",
+        name: "PHP",
         color: "orange-text-gradient",
       },
       {
-        name: "tanstack/react-query",
+        name: "SQL",
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/facility-manager.png",
+    image: "/assets/canteen.jpg",
     source_code_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System",
-    deployed_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System?tab=readme-ov-file#demo",
+      "https://github.com/Kunalrpawar/canteen-management",
+    deployed_link: "",
   },
   // {
   //   name: "Netflix Clone",
@@ -448,7 +453,7 @@ const projects = [
   //     },
   //   ],
   //   image: "/assets/projects/netflix-clone.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Netflix-Clone.git",
+  //   source_code_link: ,
   //   deployed_link: "https://netflix-clone12345.vercel.app",
   // },
   // {
@@ -470,7 +475,7 @@ const projects = [
   //     },
   //   ],
   //   image: "/assets/projects/vanlife.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Van-Life.git",
+  //   source_code_link: "h",
   //   deployed_link: "https://myvanlife.netlify.app",
   // },
   // {
@@ -492,8 +497,8 @@ const projects = [
   // 		}
   // 	],
   // 	image: "/assets/projects/spooky-run.png",
-  // 	source_code_link: "https://github.com/Shivam-Sharma-1/Spooky-Run.git",
-  // 	deployed_link: "https://shivam-sharma-1.github.io/Spooky-Run"
+  // 	source_code_link: "https://github./Spooky-Run.git",
+  // 	deployed_link: "https:/hub.io/Spooky-Run"
   // }
 ];
 
@@ -501,29 +506,31 @@ const socials = [
   {
     id: "github",
     icon: <GithubIcon />,
-    link: "https://github.com/Shivam-Sharma-1",
+    link: "https://github.com/Kunalrpawar",
   },
   {
     id: "linkedin",
     icon: <LinkedInIcon />,
-    link: "https://www.linkedin.com/in/shivamsharma77607",
+    link: "https://www.linkedin.com/in/kunal-pawar-715546258/",
   },
   {
     id: "x",
     icon: <XIcon />,
-    link: "https://twitter.com/Shivam_1_Sharma",
+    link: "https://x.com/Kunal_pawar12",
   },
   {
     id: "instagram",
     icon: <InstagramIcon />,
-    link: "https://www.instagram.com/_.shivam._.here._",
+    link: "https://www.instagram.com/kunalpawar.02/?hl=en",
   },
+
+  
 ];
 
 const heroTexts = [
   "React/Next.js developer",
   500,
-  "Freelancer",
+  "Intern",
   500,
   "Full-Stack developer",
   500,
