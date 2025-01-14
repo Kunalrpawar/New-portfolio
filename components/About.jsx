@@ -28,12 +28,11 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-        Hello! I'm Kunal Ramesh Pawar, a passionate developer and aspiring problem solver. Currently pursuing a B.E. degree in Information Technology, I bring a strong focus on innovation and learning. My experience spans across developing engaging web applications and AI/ML-powered solutions.
+          Hello! I&apos;m Kunal Ramesh Pawar, a passionate developer and aspiring problem solver. Currently pursuing a B.E. degree in Information Technology, I bring a strong focus on innovation and learning. My experience spans across developing engaging web applications and AI/ML-powered solutions.
 
-I have hands-on expertise in C++, Python, and Django, along with a deep interest in crafting Technologies using  Web development, Database Management, and Game Development. 
+          I have hands-on expertise in C++, Python, and Django, along with a deep interest in crafting technologies using web development, database management, and game development. 
 
-With a keen interest in data structures and algorithms, I strive to design efficient, scalable, and user-centric applications. My mission is to bridge the gap between technology and impactful solutions, leveraging curiosity and dedication to tackle real-world challenges.
-
+          With a keen interest in data structures and algorithms, I strive to design efficient, scalable, and user-centric applications. My mission is to bridge the gap between technology and impactful solutions, leveraging curiosity and dedication to tackle real-world challenges.
 
           <br className="sm:block hidden" />
           Let&apos;s collaborate to bring your ideas to life!
