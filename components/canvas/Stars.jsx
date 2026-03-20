@@ -43,16 +43,17 @@ function StarsCanvas() {
 		<div className="w-full h-auto absolute inset-0 z-[-1]">
 			<Canvas
 				camera={{ position: [0, 0, 1] }}
-				dpr={[1, 2]}
+				dpr={[1, 1.5]}
 				gl={{
 					outputColorSpace: THREE.SRGBColorSpace,
-					alpha: false
+					alpha: false,
+					powerPreference: "high-performance",
 				}}
+				performance={{ min: 0.5 }}
 			>
 				<Suspense fallback={<CanvasLoader />}>
 					<Stars />
 				</Suspense>
-				<Preload all />
 			</Canvas>
 		</div>
 	);

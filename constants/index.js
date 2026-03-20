@@ -3,88 +3,45 @@ import LinkedInIcon from "./../public/assets/icons/linkedin.svg";
 import XIcon from "./../public/assets/icons/x.svg";
 import InstagramIcon from "./../public/assets/icons/instagram.svg";
 import FrontendIcon from "./../public/assets/icons/frontend.svg";
-import LeaderShipIcon from "./../public/assets/icons/leadership.svg";
 import ProblemSolvingIcon from "./../public/assets/icons/problem-solving.svg";
 import FreelancerIcon from "./../public/assets/icons/freelance.svg";
-import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
 
 const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "skills",
-    title: "Skills",
-  },
-  {
-    id: "projects",
-    title: "Projects",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", title: "About" },
+  { id: "education", title: "Education" },
+  { id: "work", title: "Work" },
+  { id: "achievements", title: "Achievements" },
+  { id: "skills", title: "Skills" },
+  { id: "projects", title: "Projects" },
+  { id: "contact", title: "Contact" },
 ];
 
 const services = [
   {
-    title: "Software Developer",
+    title: "Software Engineer",
     icon: <FullStackIcon />,
   },
   {
-    title: "Frontend Developer",
+    title: "Full-Stack Developer",
     icon: <FrontendIcon />,
   },
-  // {
-  //   title: "Backend Developer",
-  //   icon: <BackendIcon />,
-  // },
   {
-    title: "Problem Solving",
+    title: "AI/ML Enthusiast",
     icon: <ProblemSolvingIcon />,
   },
   {
-    title: "Intern",
+    title: "Problem Solver",
     icon: <FreelancerIcon />,
   },
-  // {
-  //   title: "Leadership",
-  //   icon: <LeaderShipIcon />,
-  // },
 ];
 
 const technologies = {
   languages: [
     {
-      name: "HTML5",
-      icon: "/assets/tech/html5.svg",
-      link: "https://html.spec.whatwg.org/multipage/",
-    },
-    {
-      name: "CSS3",
-      icon: "/assets/tech/css3.svg",
-      link: "https://www.w3.org/Style/CSS/Overview.en.html",
-    },
-    {
-      name: "JavaScript",
-      icon: "/assets/tech/javascript.svg",
-      link: "https://262.ecma-international.org/",
-    },
-    {
-      name: "TypeScript",
-      icon: "/assets/tech/typescript.svg",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      name: "C",
+      name: "C++",
       icon: "/assets/tech/c.svg",
-      link: "https://en.cppreference.com/w/c",
+      link: "https://en.cppreference.com/w/cpp",
     },
     {
       name: "Java",
@@ -99,21 +56,9 @@ const technologies = {
   ],
   frameworks: [
     {
-      name: "Next.js",
-      icon: "/assets/tech/nextjs.svg",
-      link: "https://nextjs.org/",
-    },
-
-    {
-      name: "Angular",
-      icon: "/assets/tech/angular.png",
-      link: "https://angular.com/",
-    },
-
-    {
-      name: "TailwindCSS",
-      icon: "/assets/tech/tailwindcss.svg",
-      link: "https://tailwindcss.com/",
+      name: "Node.js",
+      icon: "/assets/tech/nodejs.svg",
+      link: "https://nodejs.org/en",
     },
     {
       name: "Express.js",
@@ -121,85 +66,46 @@ const technologies = {
       link: "https://expressjs.com/",
     },
     {
-      name: "Django",
-      icon: "/assets/tech/django.png",
-      link: "https://flutter.dev/",
+      name: "Flask",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=flask",
+      link: "https://flask.palletsprojects.com/",
     },
-  ],
-  libraries: [
     {
-      name: "React",
+      name: "React.js",
       icon: "/assets/tech/react.svg",
       link: "https://react.dev/",
     },
     {
-      name: "Three.js",
-      icon: "/assets/tech/threejs.svg",
-      link: "https://threejs.org/",
-    },
-    {
-      name: "Styled-Components",
-      icon: "/assets/tech/styled-components.png",
-      link: "https://styled-components.com/",
-    },
-    {
-      name: "Framer-motion",
-      icon: "/assets/tech/framer.svg",
-      link: "https://www.framer.com/motion/",
-    },
-    {
-      name: "Zustand",
-      icon: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg",
-      link: "https://zustand-demo.pmnd.rs",
-    },
-    {
-      name: "Redux/Redux-toolkit",
-      icon: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
-      link: "https://redux.js.org",
-    },
-    {
-      name: "NextAuth.js",
-      icon: "/assets/tech/nextauthjs.png",
-      link: "https://next-auth.js.org/",
-    },
-    {
-      name: "Prisma",
-      icon: "/assets/tech/prisma.svg",
-      link: "https://www.prisma.io/",
+      name: "Angular",
+      icon: "/assets/tech/angular.png",
+      link: "https://angular.dev/",
     },
   ],
-  tools: [
+  libraries: [
     {
-      name: "Git",
-      icon: "/assets/tech/git.svg",
-      link: "https://git-scm.com/",
+      name: "PyTorch",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=pytorch",
+      link: "https://pytorch.org/",
     },
     {
-      name: "Github",
-      icon: "/assets/icons/github.svg",
-      link: "https://github.com/",
+      name: "TensorFlow",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=tensorflow",
+      link: "https://www.tensorflow.org/",
     },
     {
-      name: "Postman",
-      icon: "/assets/tech/postman.svg",
-      link: "https://www.postman.com/",
+      name: "OpenCV",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=opencv",
+      link: "https://opencv.org/",
     },
     {
-      name: "Figma",
-      icon: "/assets/tech/figma.svg",
-      link: "https://www.figma.com/",
+      name: "Pandas",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=pandas",
+      link: "https://pandas.pydata.org/",
     },
     {
-      name: "Docker",
-      icon: "/assets/tech/docker.svg",
-      link: "https://www.docker.com/",
-    },
-  ],
-  environments: [
-    {
-      name: "Node.js",
-      icon: "/assets/tech/nodejs.svg",
-      link: "https://nodejs.org/en",
+      name: "NumPy",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=numpy",
+      link: "https://numpy.org/",
     },
   ],
   databases: [
@@ -218,67 +124,85 @@ const technologies = {
       icon: "/assets/tech/mongodb.svg",
       link: "https://www.mongodb.com/",
     },
+  ],
+  tools: [
     {
-      name: "Firebase",
-      icon: "/assets/tech/firebase.svg",
-      link: "https://firebase.google.com/",
+      name: "Git",
+      icon: "/assets/tech/git.svg",
+      link: "https://git-scm.com/",
+    },
+    {
+      name: "Postman",
+      icon: "/assets/tech/postman.svg",
+      link: "https://www.postman.com/",
+    },
+    {
+      name: "WordPress",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=wordpress",
+      link: "https://wordpress.org/",
+    },
+    {
+      name: "Power BI",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=powerbi",
+      link: "https://powerbi.microsoft.com/",
+    },
+    {
+      name: "Godot",
+      icon: "https://go-skill-icons.vercel.app/api/icons?i=godot",
+      link: "https://godotengine.org/",
+    },
+  ],
+  frontend: [
+    {
+      name: "TypeScript",
+      icon: "/assets/tech/typescript.svg",
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      name: "JavaScript",
+      icon: "/assets/tech/javascript.svg",
+      link: "https://262.ecma-international.org/",
+    },
+    {
+      name: "HTML5",
+      icon: "/assets/tech/html5.svg",
+      link: "https://html.spec.whatwg.org/multipage/",
+    },
+    {
+      name: "CSS3",
+      icon: "/assets/tech/css3.svg",
+      link: "https://www.w3.org/Style/CSS/Overview.en.html",
     },
   ],
 };
 
 const experiences = [
-  // {
-  //   title: "Full Stack Developer",
-  //   company_name: "Tech Lead at GDSC MVJCE",
-  //   icon: "/assets/company/gdsc-logo.svg",
-  //   iconBg: "#E6DEDD",
-  //   date: "July 2023 - Present",
-  //   points: [
-  //     "Currently serving as the Tech Lead of GDSC, responsible for guiding technical aspects, fostering collaboration, and contributing to strategic decisions.",
-  //     "Led induction programs, ensured new member alignment with GDSC's mission, and provided technical mentorship.",
-  //     "Developed GDSC MVJCE website, enhancing the organization's online visibility.",
-  //     "Spearheaded promotional campaigns, actively engaged with the GDSC community, and played a key role in planning and executing events.",
-  //   ],
-  // },
   {
-    title: "Web Development Intern",
-    company_name: "Yarasi Tech",
+    title: "Software Development Intern - Website",
+    company_name: "iDream Advisory Pvt. Ltd., Mumbai",
+    icon: "/assets/company/curowell-logo.svg",
+    iconBg: "#E6DEDD",
+    date: "Jan 2025 - Apr 2025",
+    points: [
+      "Built and deployed Vibe-Score, an employee engagement tool using the MERN stack, cutting survey processing time by 50%.",
+      "Optimized website SEO and overall performance, boosting organic traffic by 38% and reducing page load by 45%.",
+      "Developed an automated dashboard converting Excel uploads into charts and actionable insights, reducing data analysis time.",
+      "Collaborated closely with design and development teams to enhance UX, increasing Google search engagement by 35%.",
+    ],
+  },
+  {
+    title: "Web Development Intern - Website",
+    company_name: "Clikkin Softwares, Chennai",
     icon: "/assets/company/vivada_tech_logo.png",
     iconBg: "#E6DEDD",
-    date: "May 2024",
+    date: "May 2024 - Sep 2024",
     points: [
-     "Developed a social media platform focused on trending news, similar to Twitter but excluding humorous content, improving user focus on serious discussions",
-"Leveraged Angular for frontend development and Django for seamless backend integration, ensuring a responsive and user-friendly interface",
-"Utilized Docker for containerization, optimizing deployment processes and enhancing scalability",
-"Implemented GraphQL with PostgreSQL for efficient data querying and management, boosting performance and reducing data retrieval time"
+      "Developed responsive, mobile-friendly, user-centric web applications with clean UI, optimized performance, and scalable architecture using Angular and TypeScript, achieving 95% cross-browser compatibility across modern browsers.",
+      "Built modular and reusable Angular components, improving development speed and ensuring scalable, maintainable code.",
+      "Integrated REST APIs with backend teams, improving data flow and enhancing overall user experience.",
+      "Collaborated with designers and backend developers to refine UX and application flow, increasing user engagement.",
     ],
   },
-  {
-    title: "Content Writer Intern",
-    company_name: "Marpu Foundation",
-    icon: "/assets/company/marpu1.png",
-    iconBg: "#E6DEDD",
-    date: " March 2021",
-    points: [
-      "Curated content across various niches, including Travel, Health, Food, Fashion, Lifestyle, Tech, and Sports, utilizing SEO tools to optimize content and improve search engine rankings",
-"Conducted thorough keyword research to enhance content visibility, drive organic traffic, and align with audience preferences",
-"Collaborated with editorial teams to ensure high-quality, engaging, and audience-focused content across multiple platforms",
-"Managed deadlines effectively while maintaining consistency and creativity in writing tailored to specific target audiences."
-    ],
-  },
-  // {
-  //   title: "Frontend Developer",
-  //   company_name: "Tech team member at GDSC MVJCE",
-  //   icon: "/assets/company/gdsc-logo.svg",
-  //   iconBg: "#E6DEDD",
-  //   date: "February 2022 - July 2023",
-  //   points: [
-  //     "Successfully planned and executed induction programs, providing new members with crucial information about the organization's goals and values.",
-  //     "Demonstrated web development expertise by conducting CSS workshops, equipping participants with practical web design and styling skills.",
-  //     "Played a crucial role in promoting GDSC events and actively collaborated with cross-functional teams to deliver high-quality projects, fostering teamwork and innovation.",
-  //     "Actively engaged with the GDSC community, assisted in workshops, and contributed to planning and managing GDSC events, ensuring their success and growth.",
-  //   ],
-  // },
 ];
 
 const testimonials = [
@@ -310,196 +234,57 @@ const testimonials = [
 
 const projects = [
   {
-    name: "CourtBuddy: AI-Powered Commercial court Engine",
+    name: "AI-Based Underwater Image Enhancement System for Increased Maritime Security",
     description:
-      " Developed an AI-driven research engine for commercial courts, utilizing Flask, NLP, and large language models (LLMs) for efficient legal data analysis. Employed TensorFlow for machine learning, along with predictive algorithms, dataset management, and Docker for containerization, enhancing accuracy and streamlining decision-making.",
+      "Trained, fine-tuned, and deployed deep learning models on UIEB and EUVP datasets, leveraging physics-based methods, optimization, and preprocessing for underwater image enhancement. Integrated live video streaming and real-time YOLOv8 threat detection with an analytics dashboard for monitoring. Built a fully offline-capable application using Electron.js and Docker for deployment on AUUVs/drones, supporting real-time processing and video analytics.",
     tags: [
-      {
-        name: "tensorflow",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Flask",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "shadcn",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "streamlit",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: "/assets/court.png",
-    source_code_link: "https://github.com/Kunalrpawar/Hackbots_court",
-    deployed_link: "",
-  },
-  {
-    name: "Music Recommendation System Using AI",
-    description:
-    "Developed a feature-rich and dynamic music recommendation system using Python, Streamlit,  Django, HTML, and CSS. The system leverages NLP techniques and a fine-tuned LLM model to analyze user  mood and provide personalized song  recommendations, significantly enhancing the overall listening experience",
-    tags: [
-      {
-        name: "streamlit",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "next.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "liveblocks",
-        color: "yellow-text-gradient",
-      },
+      { name: "pytorch", color: "blue-text-gradient" },
+      { name: "yolov8", color: "green-text-gradient" },
+      { name: "tensorflow", color: "pink-text-gradient" },
+      { name: "keras", color: "orange-text-gradient" },
+      { name: "opencv", color: "yellow-text-gradient" },
+      { name: "flask", color: "blue-text-gradient" },
+      { name: "postgresql", color: "green-text-gradient" },
+      { name: "docker", color: "pink-text-gradient" },
     ],
     image: "/assets/ai_music.jpg",
-    source_code_link: "https://github.com/Kunalrpawar/AI_music_recommodation",
-    deployed_link: "",
+    source_code_link: "https://github.com/Kunalrpawar",
+    deployed_link: "https://github.com/Kunalrpawar",
   },
-  // {
-  //   name: "GDSC Website",
-  //   description:
-  //     "Welcome to the official repository for the GDSC MVJCE Website, built with Next.js, Styled Components, and Prisma! This website serves as the central hub for all things tech-related at GDSC MVJCE. From insightful blog posts to incredible community projects, and from exciting tech events to getting to know our team, you'll find it all here.",
-  //   tags: [
-  //     {
-  //       name: "next.js",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "styled-components",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "three.js",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "prisma",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "framer-motion",
-  //       color: "yellow-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/gdsc-website.png",
-  //   source_code_link: "https://github.com/GDSC-MVJCE/gdscmvjce-website.git",
-  //   deployed_link: "https://gdscmvjce.vercel.app/",
-  // },
   {
-    name: "Canteen Management System",
+    name: "AI-Driven Personalized Career Guidance and Education Platform",
     description:
-      "The Canteen Management System is a comprehensive management solution developed using the Html,CSS , Javascript and PHP. It allows users to book food  and provides neccessary information about the dishes and control for various functionalities.",
+      "Developed a MERN-based AI career guidance platform offering personalized career paths and career mapping. Integrated AI mentor chat, multilingual support, and dynamic content generation for highly personalized guidance. Built interactive analytics dashboards and a smart college finder with live analytics and maps using Leaflet.js.",
     tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "SQL",
-        color: "yellow-text-gradient",
-      },
+      { name: "mongodb", color: "blue-text-gradient" },
+      { name: "express", color: "green-text-gradient" },
+      { name: "react", color: "pink-text-gradient" },
+      { name: "nodejs", color: "orange-text-gradient" },
+      { name: "google-cloud", color: "yellow-text-gradient" },
+      { name: "leaflet", color: "blue-text-gradient" },
+      { name: "d3", color: "green-text-gradient" },
     ],
-    image: "/assets/canteen.jpg",
-    source_code_link:
-      "https://github.com/Kunalrpawar/canteen-management",
-    deployed_link: "",
+    image: "/assets/projects/gdsc-website.png",
+    source_code_link: "https://github.com/Kunalrpawar",
+    deployed_link: "https://github.com/Kunalrpawar",
   },
-  // {
-  //   name: "Netflix Clone",
-  //   description:
-  //     "Netflix-Clone is a fully responsive web application that replicates the popular streaming platform Netflix. It is built using Next.js, Prisma, React, NextAuth.js, Tailwind CSS, MongoDB and TypeScript. This project aims to showcase the implementation of these technologies to create a feature-rich clone of Netflix.",
-  //   tags: [
-  //     {
-  //       name: "next.js",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "typescript",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwindcss",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "orange-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/netflix-clone.png",
-  //   source_code_link: ,
-  //   deployed_link: "https://netflix-clone12345.vercel.app",
-  // },
-  // {
-  //   name: "Van-Life",
-  //   description:
-  //     "VanLife is a user-friendly website built with React that simplifies van searches. It is a web app used to browse different types of vans. It allows users to log in and offers convenient tag-based filtering for easy browsing.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mirage.js",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "firebase-firestore",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/vanlife.png",
-  //   source_code_link: "h",
-  //   deployed_link: "https://myvanlife.netlify.app",
-  // },
-  // {
-  // 	name: "Spooky-Run",
-  // 	description:
-  // 		"Spooky Run is a web based 2D arcade style game that allows players to play as a lost dog finding its way back home through a spooky forest. The game is built using vanilla JavaScript and utilizes HTML5 and the 'canvas' element to render graphics and handle user input.",
-  // 	tags: [
-  // 		{
-  // 			name: "html5",
-  // 			color: "blue-text-gradient"
-  // 		},
-  // 		{
-  // 			name: "css3",
-  // 			color: "green-text-gradient"
-  // 		},
-  // 		{
-  // 			name: "javascript",
-  // 			color: "pink-text-gradient"
-  // 		}
-  // 	],
-  // 	image: "/assets/projects/spooky-run.png",
-  // 	source_code_link: "https://github./Spooky-Run.git",
-  // 	deployed_link: "https:/hub.io/Spooky-Run"
-  // }
+  {
+    name: "GameVoid Engine - AI-Powered 2D/3D C++ Game Engine",
+    description:
+      "Built a prompt-driven game engine to generate worlds, spawn objects, and create gameplay via natural-language prompts. Engineered architecture with ECS, PBR, real-time physics, skeletal animation, terrain, particles, and frustum culling. Developed editor toolchain with GUI, CLI editor, scripting, visual nodes, prefab support, undo/redo, and orbit camera.",
+    tags: [
+      { name: "c++20", color: "blue-text-gradient" },
+      { name: "opengl", color: "green-text-gradient" },
+      { name: "glfw", color: "pink-text-gradient" },
+      { name: "imgui", color: "orange-text-gradient" },
+      { name: "glsl", color: "yellow-text-gradient" },
+      { name: "cmake", color: "blue-text-gradient" },
+      { name: "llm", color: "green-text-gradient" },
+    ],
+    image: "/assets/projects/fig-pro.png",
+    source_code_link: "https://github.com/Kunalrpawar",
+    deployed_link: "https://github.com/Kunalrpawar",
+  },
 ];
 
 const socials = [
@@ -523,23 +308,48 @@ const socials = [
     icon: <InstagramIcon />,
     link: "https://www.instagram.com/kunalpawar.02/?hl=en",
   },
-
-  
 ];
 
 const heroTexts = [
-  "React/Next.js developer",
+  "Software Engineer",
   500,
-  "Intern",
+  "Information Technology Student",
   500,
-  "Full-Stack developer",
+  "Full-Stack Developer",
   500,
-  "Frontend developer",
+  "AI/ML Enthusiast",
   500,
-  "Backend developer",
+  "Problem Solver",
   500,
-  "Problem solver",
+  "600+ LeetCode Problems Solved",
   500,
+];
+
+const achievements = [
+  {
+    id: "sih-2025",
+    title: "Winner - Smart India Hackathon 2025",
+    description: "Won under a problem statement issued by the Ministry of Defence.",
+    icon: "🏆",
+  },
+  {
+    id: "udaan-quiz",
+    title: "2nd Place - Udaan Quiz Competition",
+    description: "Secured 2nd place and won a cash prize of ₹25,000.",
+    icon: "🥈",
+  },
+  {
+    id: "leetcode-600",
+    title: "600+ LeetCode Problems Solved",
+    description: "Achieved a LeetCode Contest Rating of 1,493.",
+    icon: "💻",
+  },
+  {
+    id: "codeforces-1100",
+    title: "Codeforces Rating: 1100",
+    description: "Active competitive programmer with consistent performance.",
+    icon: "⚡",
+  },
 ];
 
 export {
@@ -551,4 +361,5 @@ export {
   projects,
   socials,
   heroTexts,
+  achievements,
 };

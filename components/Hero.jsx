@@ -1,9 +1,22 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
 
-import { ComputersCanvas } from "./canvas";
 import { fadeIn, textVariant } from "@/utils/motion";
 import { heroTexts } from "@/constants";
+
+// Lazy load the 3D computer canvas - only load when needed
+const ComputersCanvas = dynamic(
+  () => import("./canvas").then((mod) => mod.ComputersCanvas),
+  { 
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    )
+  }
+);
 
 function Hero({ loading, isMobile }) {
   return (

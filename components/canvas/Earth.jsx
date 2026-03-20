@@ -1,4 +1,4 @@
-import React, { Suspense, useRef } from "react";
+import React, { Suspense, useRef, memo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
@@ -6,7 +6,7 @@ import * as THREE from "three";
 import CanvasLoader from "../Loader";
 import EarthModel from "./models/EarthModel";
 
-function Earth({ isMobile }) {
+const Earth = memo(({ isMobile }) => {
   const { nodes, materials } = useGLTF("models/planet/scene.gltf");
   const earthRef = useRef();
 
@@ -40,17 +40,20 @@ function Earth({ isMobile }) {
       </Suspense>
     </>
   );
-}
+});
 
 function EarthCanvas({ isMobile }) {
   return (
     <Canvas
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}
       gl={{
         outputColorSpace: THREE.SRGBColorSpace,
         alpha: true,
+        antialias: !isMobile,
+        powerPreference: "high-performance",
       }}
       className="cursor-pointer"
+      performance={{ min: 0.5 }}
     >
       <Earth isMobile={isMobile} />
     </Canvas>

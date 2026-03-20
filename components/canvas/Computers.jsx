@@ -1,17 +1,16 @@
 import {
-  Preload,
   useGLTF,
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Suspense, memo } from "react";
 
 import CanvasLoader from "../Loader";
 import ComputerModel from "./models/ComputerModel";
 
-function Computers({ isMobile }) {
+const Computers = memo(({ isMobile }) => {
   const { nodes, materials } = useGLTF("/models/desktop_pc/scene.gltf");
 
   return (
@@ -42,23 +41,25 @@ function Computers({ isMobile }) {
       />
     </>
   );
-}
+});
 
 function ComputersCanvas({ isMobile }) {
   return (
     <Canvas
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{
         outputColorSpace: THREE.SRGBColorSpace,
         alpha: true,
+        antialias: !isMobile,
+        powerPreference: "high-performance",
       }}
       className="cursor-pointer"
+      performance={{ min: 0.5 }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <Computers isMobile={isMobile} />
       </Suspense>
-      <Preload all />
     </Canvas>
   );
 }

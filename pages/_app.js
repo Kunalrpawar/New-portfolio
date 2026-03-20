@@ -9,10 +9,14 @@ import { PreLoader } from "@/components/Loader";
 
 export default function App({ Component, pageProps }) {
 	const [loading, setLoading] = useState(true);
+	
 	useEffect(() => {
-		setTimeout(() => {
+		// Reduce loader time from 3s to 1.5s for faster perceived load
+		const timer = setTimeout(() => {
 			setLoading(false);
-		}, 3000);
+		}, 1500);
+		
+		return () => clearTimeout(timer);
 	}, []);
 
 	useEffect(() => {

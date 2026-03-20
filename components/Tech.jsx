@@ -12,7 +12,7 @@ const tech = [
   technologies.libraries,
   technologies.databases,
   technologies.tools,
-  technologies.environments,
+  technologies.frontend,
 ];
 
 const techVariants = [
@@ -21,7 +21,7 @@ const techVariants = [
   "Libraries",
   "Databases",
   "Tools",
-  "Environments",
+  "Frontend",
 ];
 
 function Tech() {

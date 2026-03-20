@@ -7,6 +7,8 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
+import Achievements from "./Achievements";
+import Education from "./Education";
 
 export {
 	Hero,
@@ -17,5 +19,7 @@ export {
 	Works,
 	Feedbacks,
 	Contact,
-	StarsCanvas
+	StarsCanvas,
+	Achievements,
+	Education
 };

@@ -28,26 +28,30 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Kunal Ramesh Pawar, a passionate developer and aspiring problem solver. Currently pursuing a B.E. degree in Information Technology, I bring a strong focus on innovation and learning. My experience spans across developing engaging web applications and AI/ML-powered solutions.
-
-          I have hands-on expertise in C++, Python, and Django, along with a deep interest in crafting technologies using web development, database management, and game development. 
-
-          With a keen interest in data structures and algorithms, I strive to design efficient, scalable, and user-centric applications. My mission is to bridge the gap between technology and impactful solutions, leveraging curiosity and dedication to tackle real-world challenges.
-
+          Passionate Information Technology student and aspiring Software Engineer with hands-on experience in web development, AI/ML, and full-stack projects. Highly organized, proactive, and an effective communicator with a strong foundation in programming, problem-solving, software design, and collaborative teamwork. Enthusiastic about leveraging technical expertise to deliver innovative, scalable solutions and contribute to high-impact, growth-oriented development teams.
           <br className="sm:block hidden" />
           Let&apos;s collaborate to bring your ideas to life!
         </div>
-        <div className="w-fit break-words">
-          <Link
-            href="mailto:kunalrpawar04@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
-          >
-            <EmailIcon className="w-[30px] h-[30px]" />
-              kunalrpawar04@gmail.com
-          </Link>
+        
+        <div className="flex flex-col gap-3">
+          <div className="w-fit break-words">
+            <Link
+              href="mailto:kunalrpawar04@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
+            >
+              <EmailIcon className="w-[30px] h-[30px]" />
+                kunalrpawar04@gmail.com
+            </Link>
+          </div>
+          <div className="w-fit break-words">
+            <p className="flex items-center gap-2 text-ctnPrimaryLight dark:text-ctnSecondaryDark">
+              <span className="text-xl">📱</span> +91 7499445758
+            </p>
+          </div>
         </div>
+        
         <div className="flex gap-5 items-center">
           {socials.map((social) => (
             <Link

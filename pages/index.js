@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
 import {
   About,
@@ -6,15 +7,28 @@ import {
   Experience,
   Hero,
   Navbar,
-  StarsCanvas,
   Tech,
   Works,
+  Achievements,
+  Education,
 } from "@/components";
 import HeroBackground from "@/components/HeroBackground";
-import EarthContainer from "@/components/EarthContainer";
-import PlayerContainer from "@/components/PlayerContainer";
 import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
+
+// Lazy load 3D canvas components with no SSR for better performance
+const StarsCanvas = dynamic(
+  () => import("@/components").then((mod) => mod.StarsCanvas),
+  { ssr: false, loading: () => <div className="w-full h-full bg-transparent" /> }
+);
+const EarthContainer = dynamic(
+  () => import("@/components/EarthContainer"),
+  { ssr: false }
+);
+const PlayerContainer = dynamic(
+  () => import("@/components/PlayerContainer"),
+  { ssr: false }
+);
 
 function App({ loading }) {
   useEffect(() => {
@@ -45,12 +59,14 @@ function App({ loading }) {
         <HeroBackground />
         <Hero loading={loading} isMobile={isMobile} />
       </div>
+      <Education />
       <section className="relative z-0 flex md:flex-row flex-col-reverse w-full h-full overflow-hidden">
         <About />
         {!isMobile && <PlayerContainer isMobile={isMobile} />}
       </section>
       <Services />
       <Experience />
+      <Achievements />
       <Tech />
       <Works />
       {/* <Feedbacks /> */}

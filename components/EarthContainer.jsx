@@ -1,7 +1,19 @@
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 import { slideIn } from "@/utils/motion";
-import { EarthCanvas } from "./canvas";
+
+const EarthCanvas = dynamic(
+	() => import("./canvas").then((mod) => mod.EarthCanvas),
+	{ 
+		ssr: false,
+		loading: () => (
+			<div className="w-full h-full flex items-center justify-center">
+				<div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+			</div>
+		)
+	}
+);
 
 function EarthContainer({ isMobile }) {
 	return (
